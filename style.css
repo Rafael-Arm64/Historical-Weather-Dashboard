@@ -1,3 +1,17 @@
 body {
-    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to top, #a1c4fd, #fad0c4);
+    color: black;
 }
+.badge {
+    color: black;
+    
+}
+.nav-link {
+    color: rgb(143, 112, 149);
+}
+.view1Container {
+    background-color: rgb(0, 0, 0);
+}
+
