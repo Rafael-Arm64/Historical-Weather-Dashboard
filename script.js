@@ -14,13 +14,13 @@ async function init() {
             const view2Container = document.getElementById("view2");
             const view3Container = document.getElementById("view3");
               if (view1Container) {
-                renderWeather(view1Container, data, "temperature_2m", "Temperature (°C)", "orange");
+                renderWeather(view1Container, data, "temperature_2m", "Temperature (°C)", "dodgerblue");
               } 
               if (view2Container) {
                  renderWeather(view2Container, data, "wind_speed_10m", "Wind Speed (m/s)", "dodgerblue");
               }
               if (view3Container) {
-                  renderWeather(view3Container, data, "precipitation_probability", "Precipitation Probability (%)", "limegreen");
+                  renderWeather(view3Container, data, "precipitation_probability", "Precipitation Probability (%)", "dodgerblue");
               }
     } catch (error) {
         console.error("error 1", error);
@@ -171,7 +171,7 @@ function renderWeather(container, data, variableName, label, color) {
             <canvas id="chart-${variableName}"></canvas>
 
             <div class="mt-4 text-white container-fluid">
-                <h5 class="mb-3 border-bottom pb-2">Statistics (Last ${selectedSpan} Reaadings)</h5>
+                <h5 class="mb-3 border-bottom pb-2">Statistics (Last ${selectedSpan} readings)</h5>
                 <p>Minimum: ${stats.min}</p>
                 <p>Maximum: ${stats.max}</p>
                 <p>Mean: ${stats.mean}</p>
